@@ -1,11 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bew67m8uxj7ta"]
+[gd_scene load_steps=7 format=3 uid="uid://bew67m8uxj7ta"]
 
+[ext_resource type="Script" uid="uid://d2o274ngukdln" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://dq0vutv2rfk6m" path="res://box.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://bbwopwj7ofel7" path="res://Scenes/enemy.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://cogopbuqhw8mk" path="res://puu.tscn" id="5_036b0"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_aqk2v")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0.13815093, 0.6025442, 0.26524803, 1)
@@ -24,3 +28,14 @@ position = Vector2(354, 416)
 
 [node name="Box" parent="." instance=ExtResource("2_tlwt5")]
 position = Vector2(177, 208)
+
+[node name="enemy" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(938, 123)
+
+[node name="MainCamera" type="Camera2D" parent="."]
+
+[node name="Puu" parent="." instance=ExtResource("5_036b0")]
+position = Vector2(387, 19)
+
+[node name="Box4" parent="." instance=ExtResource("5_036b0")]
+position = Vector2(-33, 59)

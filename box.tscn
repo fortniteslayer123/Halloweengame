@@ -6,6 +6,7 @@
 size = Vector2(73, 55)
 
 [node name="Box" type="StaticBody2D"]
+collision_mask = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.10155517, 0.10155517, 0.10155517, 1)
@@ -15,5 +16,6 @@ scale = Vector2(0.65625, 0.4765625)
 texture = ExtResource("1_g2tbl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-22.5, -33.5)
+position = Vector2(-22.499998, -33.499996)
+scale = Vector2(1, 0.99999994)
 shape = SubResource("RectangleShape2D_g2tbl")
