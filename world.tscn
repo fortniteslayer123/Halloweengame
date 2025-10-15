@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bew67m8uxj7ta"]
+
+[ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dq0vutv2rfk6m" path="res://box.tscn" id="2_tlwt5"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
+
+[node name="World" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.13815093, 0.6025442, 0.26524803, 1)
+position = Vector2(662.4999, 260)
+scale = Vector2(2681, 1698.0001)
+mesh = SubResource("QuadMesh_gv5m4")
+
+[node name="Player" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(565, 262)
+
+[node name="Box3" parent="." instance=ExtResource("2_tlwt5")]
+position = Vector2(1027, 407)
+
+[node name="Box2" parent="." instance=ExtResource("2_tlwt5")]
+position = Vector2(354, 416)
+
+[node name="Box" parent="." instance=ExtResource("2_tlwt5")]
+position = Vector2(177, 208)
