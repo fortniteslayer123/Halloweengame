@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://qqerxc8tqfs6"]
+
+[ext_resource type="Texture2D" uid="uid://bge5eh72rw354" path="res://Assets/benchDecorated.png" id="1_nv6gi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2lxh1"]
+size = Vector2(166, 23)
+
+[node name="BenchDecorated" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.9999962, -2.000002)
+texture = ExtResource("1_nv6gi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 60.5)
+shape = SubResource("RectangleShape2D_2lxh1")

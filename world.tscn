@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bew67m8uxj7ta"]
+[gd_scene load_steps=30 format=3 uid="uid://bew67m8uxj7ta"]
 
 [ext_resource type="Script" uid="uid://d2o274ngukdln" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
@@ -9,10 +9,25 @@
 [ext_resource type="Texture2D" uid="uid://cwbiajuivkhqe" path="res://Assets/archGateLeft.png" id="7_gbfbk"]
 [ext_resource type="Texture2D" uid="uid://bfxvmo3ujvgeh" path="res://Assets/archGateright.png" id="8_ioo17"]
 [ext_resource type="PackedScene" uid="uid://dndftownnhl1x" path="res://fence_pillar.tscn" id="9_wse8f"]
+[ext_resource type="Texture2D" uid="uid://bnu7rcc5uohvb" path="res://Assets/skull2.png" id="10_bo7i5"]
 [ext_resource type="PackedScene" uid="uid://cbrrx15mpnijn" path="res://fence.tscn" id="10_ic0uy"]
+[ext_resource type="Texture2D" uid="uid://xdowxrd1p66x" path="res://Assets/pumpkinYellowFace.png" id="11_4h6ng"]
 [ext_resource type="PackedScene" uid="uid://u06r7f8m2xoj" path="res://fence_broken.tscn" id="11_ic0uy"]
 [ext_resource type="PackedScene" uid="uid://hdg3ft1gq30f" path="res://shrine_candles.tscn" id="12_2o6r5"]
+[ext_resource type="Texture2D" uid="uid://4teh365ginyb" path="res://Assets/pumpkin.png" id="12_o3ebs"]
 [ext_resource type="PackedScene" uid="uid://cx2kff8cslhg2" path="res://plaque_candles.tscn" id="13_70uel"]
+[ext_resource type="PackedScene" uid="uid://qqerxc8tqfs6" path="res://bench_decorated.tscn" id="14_70uel"]
+[ext_resource type="PackedScene" uid="uid://crfl5w771dh1m" path="res://candle.tscn" id="18_k83mh"]
+[ext_resource type="PackedScene" uid="uid://bga575rd5ucpy" path="res://pillar.tscn" id="19_qktwf"]
+[ext_resource type="Texture2D" uid="uid://dk4ewagqubhnj" path="res://Assets/pathA.png" id="20_bh8nc"]
+[ext_resource type="Texture2D" uid="uid://bs080f15jbcwp" path="res://Assets/tree008.png" id="21_jjr1n"]
+[ext_resource type="Texture2D" uid="uid://bhbuxf3iver7g" path="res://Assets/tree005.png" id="22_gggvi"]
+[ext_resource type="Texture2D" uid="uid://cjymyfhtpxciu" path="res://Assets/tree006.png" id="23_w44yn"]
+[ext_resource type="Texture2D" uid="uid://cmp48mdjmp3hk" path="res://Assets/tree009.png" id="24_6ah6f"]
+[ext_resource type="PackedScene" uid="uid://trgdosyivesm" path="res://shrine.tscn" id="25_g1i3r"]
+[ext_resource type="PackedScene" uid="uid://bicdfwy07puqi" path="res://crypt_2.tscn" id="26_my276"]
+[ext_resource type="PackedScene" uid="uid://o8i64bn4hi7u" path="res://plaque.tscn" id="27_o3ebs"]
+[ext_resource type="PackedScene" uid="uid://cyr5ujadkybgt" path="res://coffin_decorated.tscn" id="28_k83mh"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
 
@@ -38,13 +53,14 @@ position = Vector2(354, 416)
 position = Vector2(177, 208)
 
 [node name="enemy" parent="." instance=ExtResource("3_tlwt5")]
-position = Vector2(938, 123)
+position = Vector2(817, -289)
 
 [node name="MainCamera" type="Camera2D" parent="."]
 
 [node name="Puu" parent="." instance=ExtResource("5_036b0")]
 
 [node name="Arch" parent="." instance=ExtResource("6_dwbse")]
+top_level = true
 position = Vector2(653, 926)
 
 [node name="ArchGateright" type="Sprite2D" parent="Arch"]
@@ -57,28 +73,253 @@ scale = Vector2(1, 0.9961832)
 texture = ExtResource("7_gbfbk")
 
 [node name="FencePillar" parent="." instance=ExtResource("9_wse8f")]
+top_level = true
 position = Vector2(467, 1046)
 
+[node name="FencePillar4" parent="." instance=ExtResource("9_wse8f")]
+top_level = true
+position = Vector2(1223, -632)
+
 [node name="FencePillar3" parent="." instance=ExtResource("9_wse8f")]
+top_level = true
 position = Vector2(844, 1046)
 
 [node name="FencePillar2" parent="." instance=ExtResource("9_wse8f")]
+top_level = true
 position = Vector2(91, 1046)
 
+[node name="Skull2" type="Sprite2D" parent="FencePillar2"]
+position = Vector2(-5.9604645e-08, -72)
+scale = Vector2(0.55769235, 0.4583336)
+texture = ExtResource("10_bo7i5")
+
+[node name="PumpkinYellowFace" type="Sprite2D" parent="FencePillar2"]
+position = Vector2(375, -61.00001)
+scale = Vector2(0.34722263, 0.31140375)
+texture = ExtResource("11_4h6ng")
+
+[node name="Pumpkin" type="Sprite2D" parent="FencePillar2"]
+position = Vector2(752, -64.00002)
+scale = Vector2(0.50000054, 0.5757583)
+texture = ExtResource("12_o3ebs")
+
 [node name="Fence" parent="." instance=ExtResource("10_ic0uy")]
+top_level = true
 position = Vector2(279, 1021)
 
+[node name="Fence6" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(1035, -657)
+
+[node name="Fence7" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(1837, -657)
+
+[node name="Fence5" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(278, -657)
+
+[node name="Fence4" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(-511, -657)
+
 [node name="Fence3" parent="." instance=ExtResource("10_ic0uy")]
+top_level = true
 position = Vector2(1538, 1021)
 
 [node name="Fence2" parent="." instance=ExtResource("10_ic0uy")]
+top_level = true
 position = Vector2(-97, 1021)
 
 [node name="Fence_broken" parent="." instance=ExtResource("11_ic0uy")]
+top_level = true
 position = Vector2(1032, 1021)
 
+[node name="Fence_broken3" parent="." instance=ExtResource("11_ic0uy")]
+top_level = true
+position = Vector2(-86, -657)
+
+[node name="Fence_broken2" parent="." instance=ExtResource("11_ic0uy")]
+top_level = true
+position = Vector2(-521, 1021)
+
 [node name="ShrineCandles" parent="." instance=ExtResource("12_2o6r5")]
+top_level = true
 position = Vector2(-309, 1031)
 
 [node name="PlaqueCandles" parent="." instance=ExtResource("13_70uel")]
+top_level = true
 position = Vector2(1284, 1050)
+
+[node name="BenchDecorated" parent="." instance=ExtResource("14_70uel")]
+position = Vector2(1789, 1036)
+
+[node name="Candle" parent="." instance=ExtResource("18_k83mh")]
+position = Vector2(1896, 1072)
+
+[node name="Pillar" parent="." instance=ExtResource("19_qktwf")]
+top_level = true
+position = Vector2(1962, 927)
+
+[node name="PathA" type="Sprite2D" parent="."]
+position = Vector2(656, 1063)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA2" type="Sprite2D" parent="."]
+position = Vector2(655, 982)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA3" type="Sprite2D" parent="."]
+position = Vector2(654, 906)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA4" type="Sprite2D" parent="."]
+position = Vector2(653, 825)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA5" type="Sprite2D" parent="."]
+position = Vector2(646, 743)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA6" type="Sprite2D" parent="."]
+position = Vector2(646, 671)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA7" type="Sprite2D" parent="."]
+position = Vector2(644, 600)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA8" type="Sprite2D" parent="."]
+position = Vector2(646, 525)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA9" type="Sprite2D" parent="."]
+position = Vector2(648, 452)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA10" type="Sprite2D" parent="."]
+position = Vector2(651, 380)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA11" type="Sprite2D" parent="."]
+position = Vector2(654, 307)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA12" type="Sprite2D" parent="."]
+position = Vector2(655, 233)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA13" type="Sprite2D" parent="."]
+position = Vector2(650, 156)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA14" type="Sprite2D" parent="."]
+position = Vector2(649, 77)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA15" type="Sprite2D" parent="."]
+position = Vector2(653, -3)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA16" type="Sprite2D" parent="."]
+position = Vector2(654, -79)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA17" type="Sprite2D" parent="."]
+position = Vector2(655, -156)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA18" type="Sprite2D" parent="."]
+position = Vector2(656, -230)
+texture = ExtResource("20_bh8nc")
+
+[node name="PathA19" type="Sprite2D" parent="."]
+position = Vector2(659, -309)
+texture = ExtResource("20_bh8nc")
+
+[node name="Tree023" type="Sprite2D" parent="."]
+position = Vector2(-620, -648)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree011" type="Sprite2D" parent="."]
+position = Vector2(-613, -456)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree010" type="Sprite2D" parent="."]
+position = Vector2(-620, -257)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree007" type="Sprite2D" parent="."]
+position = Vector2(-614, -58)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree009" type="Sprite2D" parent="."]
+position = Vector2(-622, 141)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree006" type="Sprite2D" parent="."]
+position = Vector2(-617, 342)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree008" type="Sprite2D" parent="."]
+position = Vector2(-624, 540)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree005" type="Sprite2D" parent="."]
+position = Vector2(-622, 743)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree022" type="Sprite2D" parent="."]
+position = Vector2(1944, -563)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree021" type="Sprite2D" parent="."]
+position = Vector2(1926, -415)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree020" type="Sprite2D" parent="."]
+position = Vector2(1954, -274)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree019" type="Sprite2D" parent="."]
+position = Vector2(1927, -135)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree018" type="Sprite2D" parent="."]
+position = Vector2(1949, 10)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree017" type="Sprite2D" parent="."]
+position = Vector2(1925, 148)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree016" type="Sprite2D" parent="."]
+position = Vector2(1945, 281)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree015" type="Sprite2D" parent="."]
+position = Vector2(1924, 431)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree014" type="Sprite2D" parent="."]
+position = Vector2(1953, 568)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree013" type="Sprite2D" parent="."]
+position = Vector2(1934, 705)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree012" type="Sprite2D" parent="."]
+position = Vector2(1966, 834)
+texture = ExtResource("23_w44yn")
+
+[node name="Shrine" parent="." instance=ExtResource("25_g1i3r")]
+position = Vector2(-299, -670)
+
+[node name="Crypt_2" parent="." instance=ExtResource("26_my276")]
+position = Vector2(662, -775)
+
+[node name="Candle2" parent="." instance=ExtResource("18_k83mh")]
+position = Vector2(96, -605)
+
+[node name="Plaque" parent="." instance=ExtResource("27_o3ebs")]
+position = Vector2(1585, -608)
+
+[node name="CoffinDecorated" parent="." instance=ExtResource("28_k83mh")]
+position = Vector2(1371, -631)

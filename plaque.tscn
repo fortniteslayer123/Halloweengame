@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://o8i64bn4hi7u"]
+
+[ext_resource type="Texture2D" uid="uid://tv4csae2ed2l" path="res://Assets/plaque1.png" id="1_0clap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c14h"]
+size = Vector2(172, 20)
+
+[node name="Plaque" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.9999962, -2.000002)
+texture = ExtResource("1_0clap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 29)
+shape = SubResource("RectangleShape2D_6c14h")
