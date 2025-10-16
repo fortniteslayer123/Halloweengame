@@ -1,10 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://bew67m8uxj7ta"]
+[gd_scene load_steps=15 format=3 uid="uid://bew67m8uxj7ta"]
 
 [ext_resource type="Script" uid="uid://d2o274ngukdln" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://dq0vutv2rfk6m" path="res://box.tscn" id="2_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://bbwopwj7ofel7" path="res://Scenes/enemy.tscn" id="3_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://cogopbuqhw8mk" path="res://puu.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://d1046qtlodspw" path="res://arch.tscn" id="6_dwbse"]
+[ext_resource type="Texture2D" uid="uid://cwbiajuivkhqe" path="res://Assets/archGateLeft.png" id="7_gbfbk"]
+[ext_resource type="Texture2D" uid="uid://bfxvmo3ujvgeh" path="res://Assets/archGateright.png" id="8_ioo17"]
+[ext_resource type="PackedScene" uid="uid://dndftownnhl1x" path="res://fence_pillar.tscn" id="9_wse8f"]
+[ext_resource type="PackedScene" uid="uid://cbrrx15mpnijn" path="res://fence.tscn" id="10_ic0uy"]
+[ext_resource type="PackedScene" uid="uid://u06r7f8m2xoj" path="res://fence_broken.tscn" id="11_ic0uy"]
+[ext_resource type="PackedScene" uid="uid://hdg3ft1gq30f" path="res://shrine_candles.tscn" id="12_2o6r5"]
+[ext_resource type="PackedScene" uid="uid://cx2kff8cslhg2" path="res://plaque_candles.tscn" id="13_70uel"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
 
@@ -35,7 +43,42 @@ position = Vector2(938, 123)
 [node name="MainCamera" type="Camera2D" parent="."]
 
 [node name="Puu" parent="." instance=ExtResource("5_036b0")]
-position = Vector2(387, 19)
 
-[node name="Box4" parent="." instance=ExtResource("5_036b0")]
-position = Vector2(-33, 59)
+[node name="Arch" parent="." instance=ExtResource("6_dwbse")]
+position = Vector2(653, 926)
+
+[node name="ArchGateright" type="Sprite2D" parent="Arch"]
+position = Vector2(-60, 61)
+texture = ExtResource("8_ioo17")
+
+[node name="ArchGateLeft" type="Sprite2D" parent="Arch"]
+position = Vector2(65, 57.5)
+scale = Vector2(1, 0.9961832)
+texture = ExtResource("7_gbfbk")
+
+[node name="FencePillar" parent="." instance=ExtResource("9_wse8f")]
+position = Vector2(467, 1046)
+
+[node name="FencePillar3" parent="." instance=ExtResource("9_wse8f")]
+position = Vector2(844, 1046)
+
+[node name="FencePillar2" parent="." instance=ExtResource("9_wse8f")]
+position = Vector2(91, 1046)
+
+[node name="Fence" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(279, 1021)
+
+[node name="Fence3" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(1538, 1021)
+
+[node name="Fence2" parent="." instance=ExtResource("10_ic0uy")]
+position = Vector2(-97, 1021)
+
+[node name="Fence_broken" parent="." instance=ExtResource("11_ic0uy")]
+position = Vector2(1032, 1021)
+
+[node name="ShrineCandles" parent="." instance=ExtResource("12_2o6r5")]
+position = Vector2(-309, 1031)
+
+[node name="PlaqueCandles" parent="." instance=ExtResource("13_70uel")]
+position = Vector2(1284, 1050)

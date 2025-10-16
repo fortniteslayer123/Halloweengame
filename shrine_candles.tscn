@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://hdg3ft1gq30f"]
+
+[ext_resource type="Texture2D" uid="uid://couqfds2rosw0" path="res://Assets/shrineCandles.png" id="1_6ximm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjgt7"]
+size = Vector2(92, 36)
+
+[node name="ShrineCandles" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.9999962, -2.000002)
+texture = ExtResource("1_6ximm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 61)
+shape = SubResource("RectangleShape2D_hjgt7")

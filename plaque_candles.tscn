@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx2kff8cslhg2"]
+
+[ext_resource type="Texture2D" uid="uid://vypvhwtdgj22" path="res://Assets/plaqueCandles.png" id="1_mwbts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjgt7"]
+size = Vector2(170, 36)
+
+[node name="PlaqueCandles" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.9999962, -2.000002)
+texture = ExtResource("1_mwbts")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 41)
+shape = SubResource("RectangleShape2D_hjgt7")
