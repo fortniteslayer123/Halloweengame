@@ -1,5 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=32 format=3 uid="uid://bew67m8uxj7ta"]
-
+=======
+[gd_scene load_steps=46 format=3 uid="uid://bew67m8uxj7ta"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://d2o274ngukdln" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
@@ -30,6 +33,10 @@
 [ext_resource type="PackedScene" uid="uid://bicdfwy07puqi" path="res://crypt_2.tscn" id="26_my276"]
 [ext_resource type="PackedScene" uid="uid://o8i64bn4hi7u" path="res://plaque.tscn" id="27_o3ebs"]
 [ext_resource type="PackedScene" uid="uid://cyr5ujadkybgt" path="res://coffin_decorated.tscn" id="28_k83mh"]
+<<<<<<< Updated upstream
+[ext_resource type="PackedScene" uid="uid://gqbdqpdcb20l" path="res://Scenes/spawner.tscn" id="29_k83mh"]
+[ext_resource type="PackedScene" uid="uid://btrsey7y3v0o5" path="res://Scenes/enemy_spawner.tscn" id="30_qktwf"]
+=======
 [ext_resource type="PackedScene" uid="uid://07npuspar6mh" path="res://random_collision.tscn" id="29_k83mh"]
 [ext_resource type="PackedScene" uid="uid://ynr5s2xtqkfi" path="res://post.tscn" id="30_bh8nc"]
 [ext_resource type="Texture2D" uid="uid://cq46ar4qjm4nn" path="res://Assets/lantern.png" id="31_jjr1n"]
@@ -45,6 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://dvlme58g80o1t" path="res://Assets/boneC.png" id="42_fnoqa"]
 [ext_resource type="Texture2D" uid="uid://c7edg3nrjxxo7" path="res://Assets/boneB.png" id="43_nx736"]
 [ext_resource type="Texture2D" uid="uid://bmru6x5fq40k1" path="res://Assets/pumpkinFace.png" id="44_55kwu"]
+>>>>>>> Stashed changes
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
 
@@ -175,6 +183,8 @@ position = Vector2(1896, 1072)
 top_level = true
 position = Vector2(1962, 927)
 
+=======
+>>>>>>> Stashed changes
 [node name="PathA" type="Sprite2D" parent="."]
 position = Vector2(656, 1063)
 texture = ExtResource("20_bh8nc")
@@ -269,11 +279,11 @@ position = Vector2(1035, -657)
 [node name="CoffinDecorated" parent="." instance=ExtResource("28_k83mh")]
 position = Vector2(1371, -631)
 
-
+<<<<<<< Updated upstream
 [node name="spawner" parent="." instance=ExtResource("29_k83mh")]
 
 [node name="EnemySpawner" parent="." instance=ExtResource("30_qktwf")]
-
+=======
 [node name="Plaque" parent="." instance=ExtResource("27_o3ebs")]
 position = Vector2(1585, -608)
 
