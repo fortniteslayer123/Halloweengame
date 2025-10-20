@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=32 format=3 uid="uid://bew67m8uxj7ta"]
-=======
-[gd_scene load_steps=46 format=3 uid="uid://bew67m8uxj7ta"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://d2o274ngukdln" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dno81mu60av6k" path="res://Scenes/player.tscn" id="2_fj7yv"]
@@ -17,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://cbrrx15mpnijn" path="res://fence.tscn" id="10_ic0uy"]
 [ext_resource type="Texture2D" uid="uid://xdowxrd1p66x" path="res://Assets/pumpkinYellowFace.png" id="11_4h6ng"]
 [ext_resource type="PackedScene" uid="uid://u06r7f8m2xoj" path="res://fence_broken.tscn" id="11_ic0uy"]
-[ext_resource type="Texture2D" uid="uid://c1chl3h8q8i3x" path="res://Assets/pathD.png" id="11_yx0jh"]
 [ext_resource type="PackedScene" uid="uid://hdg3ft1gq30f" path="res://shrine_candles.tscn" id="12_2o6r5"]
 [ext_resource type="Texture2D" uid="uid://4teh365ginyb" path="res://Assets/pumpkin.png" id="12_o3ebs"]
 [ext_resource type="PackedScene" uid="uid://cx2kff8cslhg2" path="res://plaque_candles.tscn" id="13_70uel"]
@@ -33,26 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://bicdfwy07puqi" path="res://crypt_2.tscn" id="26_my276"]
 [ext_resource type="PackedScene" uid="uid://o8i64bn4hi7u" path="res://plaque.tscn" id="27_o3ebs"]
 [ext_resource type="PackedScene" uid="uid://cyr5ujadkybgt" path="res://coffin_decorated.tscn" id="28_k83mh"]
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://gqbdqpdcb20l" path="res://Scenes/spawner.tscn" id="29_k83mh"]
 [ext_resource type="PackedScene" uid="uid://btrsey7y3v0o5" path="res://Scenes/enemy_spawner.tscn" id="30_qktwf"]
-=======
-[ext_resource type="PackedScene" uid="uid://07npuspar6mh" path="res://random_collision.tscn" id="29_k83mh"]
-[ext_resource type="PackedScene" uid="uid://ynr5s2xtqkfi" path="res://post.tscn" id="30_bh8nc"]
-[ext_resource type="Texture2D" uid="uid://cq46ar4qjm4nn" path="res://Assets/lantern.png" id="31_jjr1n"]
-[ext_resource type="PackedScene" uid="uid://mu1bsfjqcl0m" path="res://dirt_slab.tscn" id="33_1ew0l"]
-[ext_resource type="Texture2D" uid="uid://c0nmncp5gmdda" path="res://Assets/graveA.png" id="34_ryup7"]
-[ext_resource type="Texture2D" uid="uid://ds4chjxqjix7u" path="res://Assets/graveb.png" id="35_ytpkv"]
-[ext_resource type="Texture2D" uid="uid://3nnqsqsibt7f" path="res://Assets/graveE.png" id="36_jas3d"]
-[ext_resource type="Texture2D" uid="uid://8mvnjvk1ni3m" path="res://Assets/graveC.png" id="37_7htu6"]
-[ext_resource type="Texture2D" uid="uid://bnjk6t5uooqr2" path="res://Assets/graveD.png" id="38_7qk3m"]
-[ext_resource type="Texture2D" uid="uid://l47y0h8vv58" path="res://Assets/pathC.png" id="39_7qk3m"]
-[ext_resource type="Texture2D" uid="uid://gyc66xie57ob" path="res://Assets/coffinLid.png" id="40_xpnt2"]
-[ext_resource type="Texture2D" uid="uid://drcrjqbc3retj" path="res://Assets/coffin.png" id="41_ruyqm"]
-[ext_resource type="Texture2D" uid="uid://dvlme58g80o1t" path="res://Assets/boneC.png" id="42_fnoqa"]
-[ext_resource type="Texture2D" uid="uid://c7edg3nrjxxo7" path="res://Assets/boneB.png" id="43_nx736"]
-[ext_resource type="Texture2D" uid="uid://bmru6x5fq40k1" path="res://Assets/pumpkinFace.png" id="44_55kwu"]
->>>>>>> Stashed changes
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
 
@@ -65,7 +42,6 @@ position = Vector2(662.4999, 260)
 scale = Vector2(2681, 1698.0001)
 mesh = SubResource("QuadMesh_gv5m4")
 
-<<<<<<< Updated upstream
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_fj7yv")]
 position = Vector2(565, 262)
 
@@ -183,8 +159,6 @@ position = Vector2(1896, 1072)
 top_level = true
 position = Vector2(1962, 927)
 
-=======
->>>>>>> Stashed changes
 [node name="PathA" type="Sprite2D" parent="."]
 position = Vector2(656, 1063)
 texture = ExtResource("20_bh8nc")
@@ -229,8 +203,12 @@ texture = ExtResource("20_bh8nc")
 position = Vector2(654, 307)
 texture = ExtResource("20_bh8nc")
 
+[node name="PathA12" type="Sprite2D" parent="."]
+position = Vector2(655, 233)
+texture = ExtResource("20_bh8nc")
+
 [node name="PathA13" type="Sprite2D" parent="."]
-position = Vector2(651, 154)
+position = Vector2(650, 156)
 texture = ExtResource("20_bh8nc")
 
 [node name="PathA14" type="Sprite2D" parent="."]
@@ -257,361 +235,97 @@ texture = ExtResource("20_bh8nc")
 position = Vector2(659, -309)
 texture = ExtResource("20_bh8nc")
 
-[node name="PathA12" type="Sprite2D" parent="."]
-position = Vector2(655, 233)
-texture = ExtResource("20_bh8nc")
+[node name="Tree023" type="Sprite2D" parent="."]
+position = Vector2(-620, -648)
+texture = ExtResource("21_jjr1n")
 
-[node name="Candle2" parent="." instance=ExtResource("18_k83mh")]
-position = Vector2(96, -605)
+[node name="Tree011" type="Sprite2D" parent="."]
+position = Vector2(-613, -456)
+texture = ExtResource("22_gggvi")
 
-[node name="Fence4" parent="." instance=ExtResource("10_ic0uy")]
-position = Vector2(-511, -657)
+[node name="Tree010" type="Sprite2D" parent="."]
+position = Vector2(-620, -257)
+texture = ExtResource("21_jjr1n")
 
-[node name="Fence5" parent="." instance=ExtResource("10_ic0uy")]
-position = Vector2(278, -657)
+[node name="Tree007" type="Sprite2D" parent="."]
+position = Vector2(-614, -58)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree009" type="Sprite2D" parent="."]
+position = Vector2(-622, 141)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree006" type="Sprite2D" parent="."]
+position = Vector2(-617, 342)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree008" type="Sprite2D" parent="."]
+position = Vector2(-624, 540)
+texture = ExtResource("21_jjr1n")
+
+[node name="Tree005" type="Sprite2D" parent="."]
+position = Vector2(-622, 743)
+texture = ExtResource("22_gggvi")
+
+[node name="Tree022" type="Sprite2D" parent="."]
+position = Vector2(1944, -563)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree021" type="Sprite2D" parent="."]
+position = Vector2(1926, -415)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree020" type="Sprite2D" parent="."]
+position = Vector2(1954, -274)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree019" type="Sprite2D" parent="."]
+position = Vector2(1927, -135)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree018" type="Sprite2D" parent="."]
+position = Vector2(1949, 10)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree017" type="Sprite2D" parent="."]
+position = Vector2(1925, 148)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree016" type="Sprite2D" parent="."]
+position = Vector2(1945, 281)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree015" type="Sprite2D" parent="."]
+position = Vector2(1924, 431)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree014" type="Sprite2D" parent="."]
+position = Vector2(1953, 568)
+texture = ExtResource("23_w44yn")
+
+[node name="Tree013" type="Sprite2D" parent="."]
+position = Vector2(1934, 705)
+texture = ExtResource("24_6ah6f")
+
+[node name="Tree012" type="Sprite2D" parent="."]
+position = Vector2(1966, 834)
+texture = ExtResource("23_w44yn")
 
 [node name="Shrine" parent="." instance=ExtResource("25_g1i3r")]
 position = Vector2(-299, -670)
 
-[node name="Fence6" parent="." instance=ExtResource("10_ic0uy")]
-position = Vector2(1035, -657)
+[node name="Crypt_2" parent="." instance=ExtResource("26_my276")]
+position = Vector2(662, -775)
+
+[node name="Candle2" parent="." instance=ExtResource("18_k83mh")]
+position = Vector2(96, -605)
+
+[node name="Plaque" parent="." instance=ExtResource("27_o3ebs")]
+position = Vector2(1585, -608)
 
 [node name="CoffinDecorated" parent="." instance=ExtResource("28_k83mh")]
 position = Vector2(1371, -631)
 
-<<<<<<< Updated upstream
 [node name="spawner" parent="." instance=ExtResource("29_k83mh")]
 
 [node name="EnemySpawner" parent="." instance=ExtResource("30_qktwf")]
-=======
-[node name="Plaque" parent="." instance=ExtResource("27_o3ebs")]
-position = Vector2(1585, -608)
-
-[node name="Fence7" parent="." instance=ExtResource("10_ic0uy")]
-position = Vector2(1837, -657)
-
-[node name="Fence_broken3" parent="." instance=ExtResource("11_ic0uy")]
-position = Vector2(-86, -657)
-
-[node name="FencePillar4" parent="." instance=ExtResource("9_wse8f")]
-position = Vector2(1223, -632)
-
-[node name="Crypt_2" parent="." instance=ExtResource("26_my276")]
-position = Vector2(650, -769)
-
-[node name="PathD" type="Sprite2D" parent="."]
-position = Vector2(803, 75)
-texture = ExtResource("11_yx0jh")
-
-[node name="PathD2" type="Sprite2D" parent="."]
-position = Vector2(962, 44)
-texture = ExtResource("11_yx0jh")
-
-[node name="PathD3" type="Sprite2D" parent="."]
-position = Vector2(1099, -32)
-texture = ExtResource("11_yx0jh")
-
-[node name="PathD4" type="Sprite2D" parent="."]
-position = Vector2(1235, -85)
-texture = ExtResource("11_yx0jh")
-
-[node name="PathD5" type="Sprite2D" parent="."]
-position = Vector2(1379, -142)
-texture = ExtResource("11_yx0jh")
-
-[node name="PathD6" type="Sprite2D" parent="."]
-position = Vector2(1402, -251)
-texture = ExtResource("11_yx0jh")
-
-[node name="DirtSlab" parent="." instance=ExtResource("33_1ew0l")]
-position = Vector2(1435, -440)
-
-[node name="Player" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(565, 262)
-
-[node name="Box3" parent="." instance=ExtResource("2_tlwt5")]
-position = Vector2(1028, 404)
-
-[node name="Box2" parent="." instance=ExtResource("2_tlwt5")]
-position = Vector2(354, 416)
-
-[node name="Box" parent="." instance=ExtResource("2_tlwt5")]
-position = Vector2(177, 208)
-
-[node name="enemy" parent="." instance=ExtResource("3_tlwt5")]
-position = Vector2(777, -246)
-
-[node name="MainCamera" type="Camera2D" parent="."]
-
-[node name="Puu" parent="." instance=ExtResource("5_036b0")]
-position = Vector2(1036, -478)
-
-[node name="Arch" parent="." instance=ExtResource("6_dwbse")]
-top_level = true
-position = Vector2(653, 926)
-
-[node name="ArchGateright" type="Sprite2D" parent="Arch"]
-position = Vector2(-60, 61)
-texture = ExtResource("8_ioo17")
-
-[node name="ArchGateLeft" type="Sprite2D" parent="Arch"]
-position = Vector2(65, 57.5)
-scale = Vector2(1, 0.9961832)
-texture = ExtResource("7_gbfbk")
-
-[node name="FencePillar" parent="." instance=ExtResource("9_wse8f")]
-top_level = true
-position = Vector2(467, 1046)
-
-[node name="FencePillar3" parent="." instance=ExtResource("9_wse8f")]
-top_level = true
-position = Vector2(844, 1046)
-
-[node name="FencePillar2" parent="." instance=ExtResource("9_wse8f")]
-top_level = true
-position = Vector2(91, 1046)
-
-[node name="Skull2" type="Sprite2D" parent="FencePillar2"]
-position = Vector2(-5.9604645e-08, -72)
-scale = Vector2(0.55769235, 0.4583336)
-texture = ExtResource("10_bo7i5")
-
-[node name="PumpkinYellowFace" type="Sprite2D" parent="FencePillar2"]
-position = Vector2(375, -61.00001)
-scale = Vector2(0.34722263, 0.31140375)
-texture = ExtResource("11_4h6ng")
-
-[node name="Pumpkin" type="Sprite2D" parent="FencePillar2"]
-position = Vector2(752, -64.00002)
-scale = Vector2(0.50000054, 0.5757583)
-texture = ExtResource("12_o3ebs")
-
-[node name="Fence" parent="." instance=ExtResource("10_ic0uy")]
-top_level = true
-position = Vector2(279, 1021)
-
-[node name="Fence3" parent="." instance=ExtResource("10_ic0uy")]
-top_level = true
-position = Vector2(1538, 1021)
-
-[node name="Fence2" parent="." instance=ExtResource("10_ic0uy")]
-top_level = true
-position = Vector2(-97, 1021)
-
-[node name="Fence_broken" parent="." instance=ExtResource("11_ic0uy")]
-top_level = true
-position = Vector2(1032, 1021)
-
-[node name="Fence_broken2" parent="." instance=ExtResource("11_ic0uy")]
-top_level = true
-position = Vector2(-521, 1021)
-
-[node name="ShrineCandles" parent="." instance=ExtResource("12_2o6r5")]
-top_level = true
-position = Vector2(-309, 1031)
-
-[node name="PlaqueCandles" parent="." instance=ExtResource("13_70uel")]
-top_level = true
-position = Vector2(1284, 1050)
-
-[node name="BenchDecorated" parent="." instance=ExtResource("14_70uel")]
-position = Vector2(1789, 1036)
-
-[node name="Candle" parent="." instance=ExtResource("18_k83mh")]
-position = Vector2(1896, 1072)
-
-[node name="Pillar" parent="." instance=ExtResource("19_qktwf")]
-top_level = true
-position = Vector2(1962, 927)
-
-[node name="Tree023" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, -648)
-texture = ExtResource("21_jjr1n")
-
-[node name="Tree011" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, -456)
-texture = ExtResource("22_gggvi")
-
-[node name="Tree010" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, -257)
-texture = ExtResource("21_jjr1n")
-
-[node name="Tree007" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, -58)
-texture = ExtResource("22_gggvi")
-
-[node name="Tree009" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, 141)
-texture = ExtResource("21_jjr1n")
-
-[node name="Tree006" type="Sprite2D" parent="."]
-modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, 342)
-texture = ExtResource("22_gggvi")
-
-[node name="Tree008" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, 540)
-texture = ExtResource("21_jjr1n")
-
-[node name="Tree005" type="Sprite2D" parent="."]
-self_modulate = Color(0.3529412, 1, 1, 1)
-position = Vector2(-652, 743)
-texture = ExtResource("22_gggvi")
-
-[node name="Tree022" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, -563)
-texture = ExtResource("23_w44yn")
-
-[node name="Tree021" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, -415)
-texture = ExtResource("24_6ah6f")
-
-[node name="Tree020" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, -274)
-texture = ExtResource("23_w44yn")
-
-[node name="Tree019" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, -135)
-texture = ExtResource("24_6ah6f")
-
-[node name="Tree018" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 10)
-texture = ExtResource("23_w44yn")
-
-[node name="Tree017" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 148)
-texture = ExtResource("24_6ah6f")
-
-[node name="Tree016" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 281)
-texture = ExtResource("23_w44yn")
-
-[node name="Tree015" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 431)
-texture = ExtResource("24_6ah6f")
-
-[node name="Tree014" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 568)
-texture = ExtResource("23_w44yn")
-
-[node name="Tree013" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 705)
-texture = ExtResource("24_6ah6f")
-
-[node name="Tree012" type="Sprite2D" parent="."]
-self_modulate = Color(0, 1.353256, 0, 1)
-position = Vector2(1979, 834)
-texture = ExtResource("23_w44yn")
-
-[node name="RandomCollision" parent="." instance=ExtResource("29_k83mh")]
-position = Vector2(-656, 185)
-
-[node name="RandomCollision2" parent="." instance=ExtResource("29_k83mh")]
-position = Vector2(1981, 185)
-
-[node name="Post2" parent="." instance=ExtResource("30_bh8nc")]
-position = Vector2(770, 490)
-
-[node name="Post3" parent="." instance=ExtResource("30_bh8nc")]
-position = Vector2(771, 111)
-
-[node name="Post" parent="." instance=ExtResource("30_bh8nc")]
-position = Vector2(777, -214)
-
-[node name="Lantern" type="Sprite2D" parent="."]
-position = Vector2(670, 512)
-texture = ExtResource("31_jjr1n")
-
-[node name="Lantern2" type="Sprite2D" parent="."]
-position = Vector2(669, 133)
-texture = ExtResource("31_jjr1n")
-
-[node name="Lantern3" type="Sprite2D" parent="."]
-position = Vector2(675, -192)
-texture = ExtResource("31_jjr1n")
-
-[node name="GraveA" type="Sprite2D" parent="."]
-position = Vector2(1296, -589)
-texture = ExtResource("34_ryup7")
-
-[node name="Graveb" type="Sprite2D" parent="."]
-position = Vector2(1448, -518)
-texture = ExtResource("35_ytpkv")
-
-[node name="GraveE" type="Sprite2D" parent="."]
-position = Vector2(1597, -549)
-texture = ExtResource("36_jas3d")
-
-[node name="GraveC" type="Sprite2D" parent="."]
-position = Vector2(1273, -474)
-texture = ExtResource("37_7htu6")
-
-[node name="GraveD" type="Sprite2D" parent="."]
-position = Vector2(1593, -460)
-texture = ExtResource("38_7qk3m")
-
-[node name="PathC" type="Sprite2D" parent="."]
-position = Vector2(471, 545)
-texture = ExtResource("39_7qk3m")
-
-[node name="PathC2" type="Sprite2D" parent="."]
-position = Vector2(304, 617)
-texture = ExtResource("39_7qk3m")
-
-[node name="PathC3" type="Sprite2D" parent="."]
-position = Vector2(117, 670)
-texture = ExtResource("39_7qk3m")
-
-[node name="DirtSlab2" parent="." instance=ExtResource("33_1ew0l")]
-position = Vector2(-212, 731)
-
-[node name="CoffinLid" type="Sprite2D" parent="."]
-position = Vector2(-355, 652)
-scale = Vector2(0.57421875, 0.60638297)
-texture = ExtResource("40_xpnt2")
-
-[node name="CoffinLid2" type="Sprite2D" parent="."]
-position = Vector2(-120.99999, 653.00006)
-scale = Vector2(0.67968744, 0.64361733)
-texture = ExtResource("40_xpnt2")
-
-[node name="Coffin" type="Sprite2D" parent="."]
-position = Vector2(-118, 730)
-texture = ExtResource("41_ruyqm")
-
-[node name="BoneC" type="Sprite2D" parent="."]
-position = Vector2(-404, 698)
-scale = Vector2(0.61702126, 0.59615386)
-texture = ExtResource("42_fnoqa")
-
-[node name="BoneB" type="Sprite2D" parent="."]
-position = Vector2(-407, 738.00006)
-scale = Vector2(1.1037736, 0.875)
-texture = ExtResource("43_nx736")
-
-[node name="Skull2" type="Sprite2D" parent="."]
-position = Vector2(-314, 730)
-scale = Vector2(0.923077, 0.81666666)
-texture = ExtResource("10_bo7i5")
-
-[node name="PumpkinFace" type="Sprite2D" parent="."]
-position = Vector2(-246, 654)
-scale = Vector2(0.47619045, 0.49122858)
-texture = ExtResource("44_55kwu")
->>>>>>> Stashed changes
