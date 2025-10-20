@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8vbbsatub1i3"]
 
 [ext_resource type="Script" uid="uid://de7pcg2v1iia5" path="res://Scripts/bullet.gd" id="1_65pfb"]
-[ext_resource type="Texture2D" uid="uid://dom3uh2wjijc0" path="res://icon.svg" id="2_dino3"]
+[ext_resource type="Texture2D" uid="uid://cqr0tvak26ph8" path="res://Objects/Bullet/luoti.png" id="2_65pfb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jwkh"]
-size = Vector2(93, 14.5)
+size = Vector2(29.431995, 14.5)
 
 [node name="Area2D" type="Area2D" groups=["attack"]]
 collision_layer = 8
@@ -12,14 +12,13 @@ collision_mask = 0
 script = ExtResource("1_65pfb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-0.47412884, -0.8995695)
-rotation = 0.52900374
-scale = Vector2(0.7578125, 0.14043851)
-texture = ExtResource("2_dino3")
+rotation = 0.7919445
+scale = Vector2(0.41429633, 0.14043851)
+texture = ExtResource("2_65pfb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 0)
-rotation = 0.5324063
+rotation = 0.39526948
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_6jwkh")
 
 [node name="Timer" type="Timer" parent="."]
