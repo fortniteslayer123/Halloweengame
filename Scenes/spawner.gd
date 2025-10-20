@@ -16,12 +16,12 @@ func _ready():
 	add_child(timer)
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
-
+	print("⏱️ Timer started")
 
 
 
 func _on_timer_timeout() -> void:
-
+	print("⏰ Timer fired!")
 	
 	if player == null:
 		push_error("Player not found in group 'player'")
