@@ -1,9 +1,5 @@
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [gd_scene load_steps=32 format=3 uid="uid://bew67m8uxj7ta"]
-=======
-[gd_scene load_steps=46 format=3 uid="uid://bew67m8uxj7ta"]
->>>>>>> Stashed changes
 =======
 [gd_scene load_steps=46 format=3 uid="uid://bew67m8uxj7ta"]
 >>>>>>> Stashed changes
@@ -38,12 +34,9 @@
 [ext_resource type="PackedScene" uid="uid://o8i64bn4hi7u" path="res://plaque.tscn" id="27_o3ebs"]
 [ext_resource type="PackedScene" uid="uid://cyr5ujadkybgt" path="res://coffin_decorated.tscn" id="28_k83mh"]
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://gqbdqpdcb20l" path="res://Scenes/spawner.tscn" id="29_k83mh"]
 [ext_resource type="PackedScene" uid="uid://btrsey7y3v0o5" path="res://Scenes/enemy_spawner.tscn" id="30_qktwf"]
 =======
-=======
->>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://07npuspar6mh" path="res://random_collision.tscn" id="29_k83mh"]
 [ext_resource type="PackedScene" uid="uid://ynr5s2xtqkfi" path="res://post.tscn" id="30_bh8nc"]
 [ext_resource type="Texture2D" uid="uid://cq46ar4qjm4nn" path="res://Assets/lantern.png" id="31_jjr1n"]
@@ -59,9 +52,6 @@
 [ext_resource type="Texture2D" uid="uid://dvlme58g80o1t" path="res://Assets/boneC.png" id="42_fnoqa"]
 [ext_resource type="Texture2D" uid="uid://c7edg3nrjxxo7" path="res://Assets/boneB.png" id="43_nx736"]
 [ext_resource type="Texture2D" uid="uid://bmru6x5fq40k1" path="res://Assets/pumpkinFace.png" id="44_55kwu"]
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 
 [sub_resource type="QuadMesh" id="QuadMesh_gv5m4"]
@@ -75,7 +65,6 @@ position = Vector2(662.4999, 260)
 scale = Vector2(2681, 1698.0001)
 mesh = SubResource("QuadMesh_gv5m4")
 
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 [node name="Player" parent="." groups=["player"] instance=ExtResource("2_fj7yv")]
 position = Vector2(565, 262)
@@ -196,8 +185,6 @@ position = Vector2(1962, 927)
 
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 [node name="PathA" type="Sprite2D" parent="."]
 position = Vector2(656, 1063)
 texture = ExtResource("20_bh8nc")
@@ -293,13 +280,10 @@ position = Vector2(1035, -657)
 position = Vector2(1371, -631)
 
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="spawner" parent="." instance=ExtResource("29_k83mh")]
 
 [node name="EnemySpawner" parent="." instance=ExtResource("30_qktwf")]
 =======
-=======
->>>>>>> Stashed changes
 [node name="Plaque" parent="." instance=ExtResource("27_o3ebs")]
 position = Vector2(1585, -608)
 
@@ -630,7 +614,4 @@ texture = ExtResource("10_bo7i5")
 position = Vector2(-246, 654)
 scale = Vector2(0.47619045, 0.49122858)
 texture = ExtResource("44_55kwu")
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
