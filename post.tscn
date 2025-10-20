@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ynr5s2xtqkfi"]
+
+[ext_resource type="Texture2D" uid="uid://b5tinr2rl151t" path="res://Assets/postLantern.png" id="1_3bjc2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_umu8y"]
+radius = 15.0
+height = 42.0
+
+[node name="Post" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-44, 69)
+texture = ExtResource("1_3bjc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 191)
+shape = SubResource("CapsuleShape2D_umu8y")

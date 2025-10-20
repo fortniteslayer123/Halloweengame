@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0kpeypw2kdb6"]
+
+[ext_resource type="Texture2D" uid="uid://dhxoofdmv3fbr" path="res://Assets/tree004.png" id="1_m42tg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_umu8y"]
+radius = 19.0
+height = 54.0
+
+[node name="DeadTree4" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m42tg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(41, 92)
+shape = SubResource("CapsuleShape2D_umu8y")
