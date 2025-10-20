@@ -1,59 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://bicdfwy07puqi"]
+[gd_scene load_steps=3 format=3 uid="uid://bicdfwy07puqi"]
 
 [ext_resource type="Texture2D" uid="uid://dgolqgugod7um" path="res://Assets/crypt2.png" id="1_xtnr4"]
 
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_xtnr4"]
-a = Vector2(-242, 205)
-b = Vector2(-286, 402)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_pqsoo"]
-a = Vector2(-286, 422)
-b = Vector2(-286, 401)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtnr4"]
-size = Vector2(559, 1)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_wkt1b"]
-a = Vector2(275, 402)
-b = Vector2(275, 422)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_trhw0"]
-a = Vector2(275, 403)
-b = Vector2(232, 208)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_ynpf1"]
-a = Vector2(-246, 50)
-b = Vector2(-242, 205)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_3hm5a"]
-a = Vector2(234, 51)
-b = Vector2(232, 208)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqsoo"]
+size = Vector2(596, 494)
 
 [node name="Crypt_2" type="StaticBody2D"]
 collision_mask = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, -2)
+position = Vector2(-0.9999962, -2.000002)
 texture = ExtResource("1_xtnr4")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_xtnr4")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_pqsoo")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-5.5, 421.5)
-shape = SubResource("RectangleShape2D_xtnr4")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_wkt1b")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_trhw0")
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_ynpf1")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
-shape = SubResource("SegmentShape2D_3hm5a")
+position = Vector2(-6, 177)
+shape = SubResource("RectangleShape2D_pqsoo")
