@@ -68,8 +68,6 @@ quit={
 2d_physics/layer_3="player_hit_box"
 2d_physics/layer_4="enemy"
 2d_physics/layer_5="enemy_player_detector"
-2d_physics/layer_6="loot"
-2d_physics/layer_9="Layer 9"
 
 [rendering]
 
